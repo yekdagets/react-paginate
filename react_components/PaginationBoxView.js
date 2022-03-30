@@ -390,7 +390,7 @@ export default class PaginationBoxView extends Component {
         items.push(this.getPageElement(index));
       }
     } else {
-      let leftSide = pageRangeDisplayed / 2;
+      let leftSide = forcePage > 5 ? 0: pageRangeDisplayed / 2;
       let rightSide = pageRangeDisplayed - leftSide;
 
       // If the selected page index is on the default right side of the pagination,
